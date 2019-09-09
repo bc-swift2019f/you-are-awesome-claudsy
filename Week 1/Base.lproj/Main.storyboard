@@ -26,22 +26,61 @@
                                 <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y4-uc-blo">
-                                <rect key="frame" x="104" y="117" width="113" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y4-uc-blo">
+                                <rect key="frame" x="191" y="113" width="113" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="aC9-lb-QWP"/>
+                                    <constraint firstAttribute="height" constant="37" id="oaR-Bg-aan"/>
+                                </constraints>
                                 <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ew-9Z-iuU"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIA-f6-sFl">
-                                <rect key="frame" x="40" y="181" width="240" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KIA-f6-sFl">
+                                <rect key="frame" x="16" y="181" width="288" height="367"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="XWf-w6-j18"/>
+                                    <constraint firstAttribute="height" constant="367" id="cMp-Rw-Bgm"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whg-lF-Tl5">
+                                <rect key="frame" x="16" y="121" width="86" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qa9-GP-VeN"/>
+                                    <constraint firstAttribute="width" constant="86" id="qp1-pA-jM1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dd4-nt-pT4">
+                                <rect key="frame" x="110" y="116" width="42" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="E2g-Vw-6ix"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="Kkk-4I-6UY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="47" id="ia3-IV-dw0"/>
+                                    <constraint firstAttribute="height" constant="31" id="qcE-10-kRv"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="soundSwitchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="CCA-HC-pkj"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dd4-nt-pT4" firstAttribute="top" secondItem="jdc-ch-ME6" secondAttribute="bottom" constant="28" id="0xD-PX-jYS"/>
+                            <constraint firstItem="whg-lF-Tl5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4Tn-Yc-PRg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2y4-uc-blo" secondAttribute="trailing" constant="16" id="57B-RT-stK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KIA-f6-sFl" secondAttribute="bottom" constant="20" id="5cC-9f-FFY"/>
+                            <constraint firstItem="dd4-nt-pT4" firstAttribute="leading" secondItem="whg-lF-Tl5" secondAttribute="trailing" constant="8" id="B53-b4-nfY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jdc-ch-ME6" secondAttribute="bottom" constant="480" id="DA0-d3-eXq"/>
+                            <constraint firstItem="KIA-f6-sFl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Db4-cl-Xbf"/>
+                            <constraint firstItem="dd4-nt-pT4" firstAttribute="leading" secondItem="whg-lF-Tl5" secondAttribute="trailing" constant="8" id="Et8-B0-8aO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KIA-f6-sFl" secondAttribute="trailing" constant="16" id="H0e-gp-fqG"/>
+                            <constraint firstItem="2y4-uc-blo" firstAttribute="top" secondItem="jdc-ch-ME6" secondAttribute="bottom" constant="25" id="Ouu-eb-Y91"/>
+                            <constraint firstItem="whg-lF-Tl5" firstAttribute="top" secondItem="jdc-ch-ME6" secondAttribute="bottom" constant="33" id="cup-d8-gkB"/>
+                            <constraint firstItem="dd4-nt-pT4" firstAttribute="top" secondItem="jdc-ch-ME6" secondAttribute="bottom" constant="28" id="fVt-nM-kCW"/>
                             <constraint firstItem="jdc-ch-ME6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mVd-QH-0ps"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdc-ch-ME6" secondAttribute="trailing" constant="16" id="xhA-FD-CtQ"/>
                             <constraint firstItem="jdc-ch-ME6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="zfj-X8-Ufa"/>
@@ -51,6 +90,7 @@
                     <connections>
                         <outlet property="awesomeImageView" destination="KIA-f6-sFl" id="ZAZ-Vn-W5G"/>
                         <outlet property="messageLabel" destination="jdc-ch-ME6" id="KEf-FO-2oA"/>
+                        <outlet property="soundSwitch" destination="dd4-nt-pT4" id="qGe-9s-dsn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
