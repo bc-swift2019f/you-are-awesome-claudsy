@@ -34,7 +34,7 @@
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ew-9Z-iuU"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ay_102510013.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KIA-f6-sFl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIA-f6-sFl">
                                 <rect key="frame" x="40" y="181" width="240" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -49,6 +49,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="awesomeImageView" destination="KIA-f6-sFl" id="ZAZ-Vn-W5G"/>
                         <outlet property="messageLabel" destination="jdc-ch-ME6" id="KEf-FO-2oA"/>
                     </connections>
                 </viewController>
@@ -57,7 +58,4 @@
             <point key="canvasLocation" x="-58.125" y="98.239436619718305"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ay_102510013.jpg" width="545.505859375" height="363.38824462890625"/>
-    </resources>
 </document>
