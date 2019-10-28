@@ -69,11 +69,10 @@ class ViewController: UIViewController {
         "I can't wait to download your app!"]
   
  
-        //shows a message
+
         index = nonRepeatingRandom(lastNumber: index, maxValue: messages.count)
         messageLabel.text = messages[index]
-        
-        //shows an image
+    
         imageIndex = nonRepeatingRandom(lastNumber: imageIndex, maxValue: numberOfImages)
         awesomeImageView.image = UIImage(named: "image\(imageIndex)")
         
