@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
     @IBOutlet weak var awesomeImageView: UIImageView!
     @IBOutlet weak var messageLabel: UILabel!
