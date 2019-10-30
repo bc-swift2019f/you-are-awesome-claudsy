@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     }
     
     func nonRepeatingRandom(lastNumber: Int, maxValue: Int) -> Int {
-        //shows a message
         var newIndex: Int
         repeat {
             newIndex = Int.random(in: 0..<maxValue)
